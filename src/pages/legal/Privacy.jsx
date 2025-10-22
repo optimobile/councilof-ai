@@ -134,7 +134,7 @@ const Privacy = () => {
             <li><strong>Withdraw Consent:</strong> For processing based on consent</li>
             <li><strong>Complain:</strong> Lodge a complaint with the ICO (UK) or your data protection authority</li>
           </ul>
-          <p>To exercise these rights, contact us at nicholastempleman@gmail.com</p>
+          <p>To exercise these rights, contact us at contact@councilof.ai</p>
         </section>
 
         <section>
@@ -172,7 +172,7 @@ const Privacy = () => {
             For privacy questions or to exercise your rights, contact:<br />
             <strong>AI Safety Governance Limited</strong><br />
             Data Protection Officer<br />
-            Email: nicholastempleman@gmail.com<br />
+            Email: contact@councilof.ai<br />
             Website: councilof.ai
           </p>
           <p>

@@ -20,7 +20,6 @@ import {
 } from './components/UnstoppableComponents'
 import {
   LiveMetricsDashboard,
-  FounderSection,
   EUAIActCountdown,
   LiveActivityFeed,
   BetaTransparencySection,
@@ -127,7 +126,6 @@ function App() {
       <BetaTransparencySection />
 
       {/* FOUNDER SECTION - Personal story like proofof.ai */}
-      <FounderSection />
 
       {/* EU AI ACT COUNTDOWN - Urgency and compliance */}
       <EUAIActCountdown />

@@ -9,6 +9,7 @@ import About from './pages/about/About';
 import HowItWorks from './pages/how-it-works/HowItWorks';
 import UseCases from './pages/use-cases/UseCases';
 import BlogHub from './pages/blog/BlogHub';
+import BlogPost from './pages/blog/BlogPost';
 import Contact from './pages/contact/Contact';
 import Terms from './pages/legal/Terms';
 import Privacy from './pages/legal/Privacy';
@@ -76,7 +77,7 @@ const Footer = () => {
             <Link to="/about">About Us</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/contact">Contact</Link>
-            <a href="mailto:nicholastempleman@gmail.com">Support</a>
+            <a href="mailto:contact@councilof.ai">Support</a>
           </div>
 
           <div className="footer-section">
@@ -118,6 +119,7 @@ const AppWithRouter = () => {
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/use-cases" element={<UseCases />} />
             <Route path="/blog" element={<BlogHub />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/legal/terms" element={<Terms />} />
             <Route path="/legal/privacy" element={<Privacy />} />

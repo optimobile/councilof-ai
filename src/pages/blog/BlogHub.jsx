@@ -168,7 +168,7 @@ const BlogHub = () => {
                           <span className="blog-date">{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                         </div>
                         <h2 className="blog-title">
-                          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                          <Link to={`/blog/${post.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}>{post.title}</Link>
                         </h2>
                         <p className="blog-excerpt">{post.excerpt}</p>
                         <div className="blog-meta">
@@ -182,7 +182,7 @@ const BlogHub = () => {
                             ))}
                           </div>
                         )}
-                        <Link to={`/blog/${post.slug}`} className="read-more">
+                        <Link to={`/blog/${post.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`} className="read-more">
                           Read Full Article →
                         </Link>
                       </article>

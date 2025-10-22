@@ -158,8 +158,8 @@ const Contact = () => {
               <div className="contact-card">
                 <h3>📧 Email Us</h3>
                 <p>For general inquiries:</p>
-                <a href="mailto:nicholastempleman@gmail.com" className="contact-link">
-                  nicholastempleman@gmail.com
+                <a href="mailto:contact@councilof.ai" className="contact-link">
+                  contact@councilof.ai
                 </a>
               </div>
 
@@ -207,7 +207,7 @@ const Contact = () => {
                 <p>
                   Need custom integration, dedicated support, or white-label options?
                 </p>
-                <a href="mailto:nicholastempleman@gmail.com?subject=Enterprise%20Inquiry" className="btn primary">
+                <a href="mailto:contact@councilof.ai?subject=Enterprise%20Inquiry" className="btn primary">
                   Contact Sales
                 </a>
               </div>

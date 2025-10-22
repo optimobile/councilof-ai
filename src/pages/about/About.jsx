@@ -48,7 +48,7 @@ const About = () => {
                 <a href="https://www.linkedin.com/in/nicktempleman/" target="_blank" rel="noopener noreferrer" className="btn secondary">
                   Connect on LinkedIn
                 </a>
-                <a href="mailto:nicholastempleman@gmail.com" className="btn secondary">
+                <a href="mailto:contact@councilof.ai" className="btn secondary">
                   Email Me
                 </a>
               </div>

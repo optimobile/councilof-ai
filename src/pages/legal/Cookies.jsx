@@ -196,7 +196,7 @@ const Cookies = () => {
           <p>
             For questions about our use of cookies, contact:<br />
             <strong>AI Safety Governance Limited</strong><br />
-            Email: nicholastempleman@gmail.com<br />
+            Email: contact@councilof.ai<br />
             Website: councilof.ai
           </p>
         </section>
