@@ -25,37 +25,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="founder-section">
-        <div className="container">
-          <h2>The Founder's Story</h2>
-          <div className="founder-content">
-            <div className="founder-text">
-              <h3>Nicholas Templeman</h3>
-              <p className="founder-title">Founder & Chief Architect</p>
-              <p>
-                I'm not from Silicon Valley. I don't have a PhD in AI. I'm not backed by venture capital. 
-                I'm a normal person from Essex, UK, who saw a problem that terrified me: <strong>How do we trust 
-                AI systems that are making increasingly important decisions?</strong>
-              </p>
-              <p>
-                So I invested my life savings and spent months building the solution: an 11-platform ecosystem 
-                where AI safety is democratic, transparent, and verifiable on blockchain.
-              </p>
-              <p>
-                <strong>You don't need to be special to build something extraordinary. You just need to care enough to start.</strong>
-              </p>
-              <div className="founder-links">
-                <a href="https://www.linkedin.com/in/nicktempleman/" target="_blank" rel="noopener noreferrer" className="btn secondary">
-                  Connect on LinkedIn
-                </a>
-                <a href="mailto:contact@councilof.ai" className="btn secondary">
-                  Email Me
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <section className="company-section">
         <div className="container">
