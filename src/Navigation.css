@@ -18,6 +18,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .nav-logo {
@@ -108,6 +110,8 @@
 .footer-container {
   max-width: 1400px;
   margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .footer-grid {
@@ -115,6 +119,8 @@
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .footer-section h3 {

@@ -51,9 +51,18 @@
 
 .platforms-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 30px;
   margin-bottom: 80px;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .platforms-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .platform-card {

@@ -39,6 +39,12 @@
 }
 
 /* Base Styling */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -405,6 +411,8 @@ section h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .text-center {
