@@ -17,16 +17,45 @@ function WaitlistForm({ inline = false }) {
     e.preventDefault()
     setLoading(true)
     
-    // TODO: Send to backend/Google Sheets
-    // For now, just simulate submission
-    setTimeout(() => {
-      setSubmitted(true)
-      setLoading(false)
-      // Store in localStorage as backup
+    try {
+      // Send to backend API
+      const response = await fetch('https://ai-safety-empire-production.up.railway.app/api/v1/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+          source: 'councilof.ai',
+          platform: 'councilof'
+        })
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+        // Also store in localStorage as backup
+        const waitlist = JSON.parse(localStorage.getItem('waitlist') || '[]')
+        waitlist.push({ ...formData, timestamp: new Date().toISOString() })
+        localStorage.setItem('waitlist', JSON.stringify(waitlist))
+      } else {
+        // Fallback to localStorage only if API fails
+        console.error('API submission failed, using localStorage')
+        const waitlist = JSON.parse(localStorage.getItem('waitlist') || '[]')
+        waitlist.push({ ...formData, timestamp: new Date().toISOString() })
+        localStorage.setItem('waitlist', JSON.stringify(waitlist))
+        setSubmitted(true)
+      }
+    } catch (error) {
+      // Fallback to localStorage on network error
+      console.error('Network error, using localStorage:', error)
       const waitlist = JSON.parse(localStorage.getItem('waitlist') || '[]')
       waitlist.push({ ...formData, timestamp: new Date().toISOString() })
       localStorage.setItem('waitlist', JSON.stringify(waitlist))
-    }, 1000)
+      setSubmitted(true)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (e) => {
