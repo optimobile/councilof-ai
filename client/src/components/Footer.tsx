@@ -1,10 +1,12 @@
 /**
  * Unified Footer Component
- * Professional footer with CSOAI branding and comprehensive links
+ * Professional footer with CSOAI branding, newsletter signup, and comprehensive links
  */
 
 import { Link } from 'wouter';
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, Shield, ArrowRight } from 'lucide-react';
+import NewsletterSignup from './NewsletterSignup';
+import { Button } from '@/components/ui/button';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -63,6 +65,40 @@ export function Footer() {
 
   return (
     <footer className="bg-white border-t border-gray-200">
+      {/* Byzantine Council CTA Bar */}
+      <div className="bg-gradient-to-r from-emerald-600 to-emerald-700">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3 text-white">
+              <Shield className="h-8 w-8" />
+              <div>
+                <h3 className="font-bold text-lg">Join the Byzantine Council</h3>
+                <p className="text-emerald-100 text-sm">Become part of our 33-agent fault-tolerant oversight system</p>
+              </div>
+            </div>
+            <Link href="/council">
+              <Button className="bg-white text-emerald-700 hover:bg-emerald-50 font-semibold px-6">
+                Learn More
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Newsletter Section */}
+      <div className="bg-gray-50 border-b border-gray-200">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div className="text-center lg:text-left">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Stay Updated on AI Safety</h3>
+              <p className="text-gray-600">Get the latest insights on AI regulations, safety frameworks, and industry updates.</p>
+            </div>
+            <NewsletterSignup />
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">

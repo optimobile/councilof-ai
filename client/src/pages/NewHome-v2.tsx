@@ -54,6 +54,11 @@ import {
 import AnimatedParticles from "@/components/AnimatedParticles";
 import EcosystemDiagram from "@/components/EcosystemDiagram";
 import CouncilVisualization from "@/components/CouncilVisualization";
+import EUAIActCountdown from "@/components/EUAIActCountdown";
+import ComparisonTable from "@/components/ComparisonTable";
+import GovernanceNetwork from "@/components/GovernanceNetwork";
+import ZeroSafetySection from "@/components/ZeroSafetySection";
+import Testimonials from "@/components/Testimonials";
 
 // Animation variants
 const fadeInUp = {
@@ -261,12 +266,22 @@ export default function NewHomeV2() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/30 rounded-full px-5 py-2.5 mb-8"
+            className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/30 rounded-full px-5 py-2.5 mb-6"
           >
             <BadgeCheck className="h-4 w-4 text-amber-400" />
             <span className="text-amber-300 text-sm font-medium">
               100% Free Training | Only Pay When You Earn
             </span>
+          </motion.div>
+
+          {/* EU AI Act Countdown */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mb-10"
+          >
+            <EUAIActCountdown />
           </motion.div>
 
           {/* Main headline */}
@@ -395,6 +410,11 @@ export default function NewHomeV2() {
           </motion.div>
         </div>
       </section>
+
+      {/* ============================================ */}
+      {/* SECTION 1.25: ZERO AI SAFETY SOLUTIONS */}
+      {/* ============================================ */}
+      <ZeroSafetySection />
 
       {/* ============================================ */}
       {/* SECTION 1.5: WHY AI SAFETY MATTERS NOW */}
@@ -663,6 +683,33 @@ export default function NewHomeV2() {
       </section>
 
       {/* ============================================ */}
+      {/* SECTION 3.5: COMPARISON TABLE */}
+      {/* ============================================ */}
+      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center mb-12"
+          >
+            <Badge className="mb-4 bg-emerald-100 text-emerald-700 border-emerald-200 text-sm px-4 py-1">
+              Why Choose CSOAI?
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              The Only Platform <span className="text-emerald-600">Solving All Four Problems</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We're not just a tool. We're building the infrastructure for safe AI governance—and creating jobs while we do it.
+            </p>
+          </motion.div>
+
+          <ComparisonTable />
+        </div>
+      </section>
+
+      {/* ============================================ */}
       {/* SECTION 4: FOR EVERY STAKEHOLDER */}
       {/* ============================================ */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
@@ -896,6 +943,11 @@ export default function NewHomeV2() {
           </motion.div>
         </div>
       </section>
+
+      {/* ============================================ */}
+      {/* SECTION 5.5: GOVERNANCE NETWORK */}
+      {/* ============================================ */}
+      <GovernanceNetwork />
 
       {/* ============================================ */}
       {/* SECTION 6: THE MATERNAL COVENANT */}
@@ -1477,6 +1529,11 @@ export default function NewHomeV2() {
           </motion.div>
         </div>
       </section>
+
+      {/* ============================================ */}
+      {/* SECTION 11.5: TESTIMONIALS */}
+      {/* ============================================ */}
+      <Testimonials />
 
       {/* ============================================ */}
       {/* SECTION 12: FAQ */}
