@@ -70,7 +70,7 @@ export default function DataProcessingAgreement() {
                       <h4 className="font-bold text-emerald-900 mb-2">Data Processor</h4>
                       <p className="text-sm text-emerald-800">
                         <strong>CSOAI LTD</strong><br />
-                        Companies House No: 16270866<br />
+                        Companies House No: 16939677<br />
                         Registered in England & Wales
                       </p>
                     </CardContent>
@@ -379,7 +379,7 @@ export default function DataProcessingAgreement() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-400">
-                  CSOAI LTD | Companies House No: 16270866 | Registered in England & Wales
+                  CSOAI LTD | Companies House No: 16939677 | Registered in England & Wales
                 </p>
               </CardContent>
             </Card>

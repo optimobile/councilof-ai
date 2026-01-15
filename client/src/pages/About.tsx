@@ -365,7 +365,7 @@ export default function About() {
             <Card className="p-6 text-center">
               <Building2 className="h-8 w-8 text-emerald-600 mx-auto mb-3" />
               <h4 className="font-bold mb-2">UK Registered</h4>
-              <p className="text-sm text-gray-600">Companies House No: 16270866</p>
+              <p className="text-sm text-gray-600">Companies House No: 16939677</p>
               <p className="text-xs text-gray-500 mt-1">Registered in England & Wales</p>
             </Card>
             <Card className="p-6 text-center">

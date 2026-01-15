@@ -356,7 +356,7 @@ export default function CookiePolicy() {
                   </a>
                 </p>
                 <p className="text-sm text-gray-400">
-                  CSOAI LTD | Companies House No: 16270866 | Registered in England & Wales
+                  CSOAI LTD | Companies House No: 16939677 | Registered in England & Wales
                 </p>
               </CardContent>
             </Card>
